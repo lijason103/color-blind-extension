@@ -17,8 +17,6 @@ function protanopes() {
 
         if(
             (current.children.length === 0 && current.textContent.replace(/ |\n/g,'') !== '') 
-                || 
-            checkIfTextTag(current.nodeName)
             ) {
                 current.style.backgroundColor = 'blue'
         }
