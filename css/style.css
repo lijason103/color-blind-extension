@@ -1,0 +1,24 @@
+button{
+    width:100px;
+    height:60px;
+    color: white;
+    font-family: 'Heebo'; 
+    font-style: normal;
+    text-align: center;
+    border: none;
+}
+
+.Acro{
+    background-color:#3B515B;
+    display: inline-block;
+}
+
+.ColorBlind{
+    background-image:linear-gradient(-28.8deg, rgb(102,102,102),rgb(51,51,51));
+    display:inline-block;
+}
+
+.MacDegen{
+    color:yellow;
+    background-image:linear-gradient(-28.8deg, #ED1C24, #741D68);
+}
