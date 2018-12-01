@@ -9,5 +9,5 @@
    "default_title": "Color Blind Assistant",
    "default_popup": "popup.html"
  },
- "permissions": ["activeTab"]
+ "permissions": ["activeTab", "declarativeContent"]
 }
