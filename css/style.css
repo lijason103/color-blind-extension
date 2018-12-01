@@ -22,3 +22,22 @@ button{
     color:yellow;
     background-image:linear-gradient(-28.8deg, #ED1C24, #741D68);
 }
+
+.Pro{
+    color:white;
+    background-image:linear-gradient(-28.8deg, #C1272D, #FF553F);
+}
+
+.Deu{
+    color:#2E3192;
+    background-image:linear-gradient(28.8deg, #F7931E, #FFFF00);
+}
+
+.Tri{
+    color:black;
+    background-image: linear-gradient(-28.8deg, #F9CFF5, #FF4EDC);
+}
+
+.Back{
+    color:black;
+}
