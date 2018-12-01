@@ -1,0 +1,13 @@
+{
+ "manifest_version": 2,
+ "name": "Color Blind Assistant",
+ "description": "Dank.",
+ "version": "1",
+ "author": "Jason Li",
+ "browser_action": {
+   "default_icon": "icon.png",
+   "default_title": "Color Blind Assistant",
+   "default_popup": "popup.html"
+ },
+ "permissions": ["activeTab"]
+}
