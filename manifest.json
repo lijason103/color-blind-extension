@@ -9,7 +9,7 @@
    "default_title": "Color Blind Assistant",
    "default_popup": "popup.html"
  },
- "permissions": ["activeTab", "declarativeContent"],
+ "permissions": ["activeTab", "declarativeContent", "storage"],
  "content_scripts": [
     {
         "matches": ["*://*/*"],
