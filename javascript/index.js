@@ -16,7 +16,7 @@ function storeMode(mode) {
     chrome.storage.sync.set({
         mode,
       }, () => {
-        alert("good")
+        alert("refresh")
     });
 }
 
