@@ -9,16 +9,16 @@ const MODES = {
         bgColor: 'white',
     },
     protanope: {
-        textColor: 'green',
-        bgColor: 'white',
+        textColor: 'rgb(255, 166, 51)',
+        bgColor: 'rgb(47, 114, 184)',
     },
     deuteranope: {
-        textColor: 'yellow',
-        bgColor: 'white',
+        textColor: 'blue',
+        bgColor: 'rgb(255,0,255)',
     },
     tritanope: {
-        textColor: 'purple',
-        bgColor: 'white',
+        textColor: 'rgb(1, 146, 213)',
+        bgColor: 'rgb(255, 254, 6)',
     },
 }
 
