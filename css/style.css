@@ -41,3 +41,17 @@ button{
 .Back{
     color:black;
 }
+.title{
+    color:black;
+    text-align: center;
+    font-family:'Heebo';
+    font-weight:700; 
+}
+
+.Revert{
+    color:black;
+}
+
+.empty{
+    background-color: white;
+}

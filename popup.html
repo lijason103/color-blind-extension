@@ -3,13 +3,16 @@
 	<head>
         <title>Color Blind Assistant</title>
         <script src="javascript/index.js" defer></script>
-        <link href="https://fonts.googleapis.com/css?family=Heebo:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo:500,700" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <table id="page-0" style="visibility: visible">
+            <tr class="title">
+                <td>VISUAL IMPAIRMENT ASSISTANT</td>
+            </tr>
             <tr>
-                <td><button id="acromatopsia" class="Acro" style="padding:10px 5px">Acromatopsia</button></td>
+                <td><button id="acromatopsia" class="Acro" style="padding:10px 5px">Achromatopsia</button></td>
             </tr>
             <tr>
                 <td><button id="nextPage" class="ColorBlind" style="padding:10px 5px">Color Blindness</button>
@@ -18,8 +21,15 @@
             <tr>
                 <td><button id="macular" class="MacDegen" style="padding:10px 5px">Macular Degeneration</button></td>
             </tr>
+            <tr>
+                <td><button class="Revert" style="padding:10px 5px">Revert to Original</button>
+                </td>
+            </tr>
         </table>
         <table id="page-1" style="visibility: hidden; position: absolute; top: 0">
+            <tr>
+                <td ><button class="empty"></button></td>
+            </tr>
             <tr>
                 <td><button id="protanope" class="Pro" style="padding:10px 5px">Protanope</button></td>
             </tr>
