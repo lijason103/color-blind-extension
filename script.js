@@ -28,12 +28,7 @@ window.onload = function(){
         if (mode) {
             changeColor(MODES[mode].textColor, MODES[mode].bgColor)
         }
-        // switch (mode) {
-        //     'acromatopsia': 
-        // }
     });
-    // console.log("here")
-    // changeColor()
 }
 
 function changeColor(textColor, bgColor) {
@@ -46,11 +41,15 @@ function changeColor(textColor, bgColor) {
            current.style.color = textColor
         }
 
+        if (current.children.length > 0) {
+            let children = current.children
+            for (let i = 0; i < children.length; ++i) {
+                let child = children[i]
+                if (child.children.length === 1 && child.children[0].innerText !== '') {
+                    child.style.backgroundColor = bgColor
+                }
+            }
+        }
 
-        // if(
-        //     (current.children.length === 0 && current.textContent.replace(/ |\n/g,'') !== '') 
-        //     ) {
-        //         current.style.backgroundColor = 'blue'
-        // }
     }
 }
