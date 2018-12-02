@@ -12,6 +12,10 @@ for (let i = 0; i < MODES.length; ++i) {
     })
 }
 
+document.getElementById("original").addEventListener('click', () => {
+    storeMode(null)
+})
+
 function storeMode(mode) {
     chrome.storage.sync.set({
         mode,
