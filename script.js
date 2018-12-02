@@ -15,7 +15,7 @@ const MODES = {
     deuteranope: {
         textColor: 'blue',
         bgColor: 'rgb(255,0,255)',
-    }
+    },
     tritanope: {
         textColor: 'rgb(1, 146, 213)',
         bgColor: 'rgb(255, 254, 6)',
