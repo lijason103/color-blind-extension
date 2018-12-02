@@ -1,22 +1,49 @@
 // this is for the main page
-window.onload=function(){
-    protanopes()
-
-    chrome.storage.sync.get(['mode'], function(result) {
-        console.log('Value currently is ' + result.mode);
-      });
-    console.log("here")
+const MODES = {
+    acromatopsia: {
+        textColor: 'black',
+        bgColor: 'white',
+    },
+    macular: {
+        textColor: 'red',
+        bgColor: 'white',
+    },
+    protanope: {
+        textColor: 'green',
+        bgColor: 'white',
+    },
+    deuteranope: {
+        textColor: 'yellow',
+        bgColor: 'white',
+    },
+    tritanope: {
+        textColor: 'purple',
+        bgColor: 'white',
+    },
 }
 
+window.onload = function(){
+    chrome.storage.sync.get(['mode'], function(result) {
+        let mode = result.mode
+        if (mode) {
+            changeColor(MODES[mode].textColor, MODES[mode].bgColor)
+        }
+        // switch (mode) {
+        //     'acromatopsia': 
+        // }
+    });
+    // console.log("here")
+    // changeColor()
+}
 
-function protanopes() {
+function changeColor(textColor, bgColor) {
     var elements = $('*');
 
     for(var i = 0; i < elements.length; i++) {
        var current = elements[i];
 
        if (current && current.style) {
-           current.style.color = 'black'
+           current.style.color = textColor
         }
 
 
